@@ -32,7 +32,7 @@ export default function Page() {
           className="py-4"
         >
           <section id="about" className="lg:mt-8 mt-80">
-            <div className="md:container flex flex-col mx-auto md:flex-row md:items-center py-5">
+            <div className="md:container flex flex-col mx-auto md:flex-row md:items-center py-5 justify-center">
               <div className="w-full px-4 md:w-1/2 lg:w-1/2">
                 <Card className="px-4 py-4">
                   <h1 className="text-4xl font-semibold text-[#ee5449]">
@@ -172,7 +172,7 @@ export default function Page() {
                 </Card>
               </div>
 
-              <div className="w-full px-4 mt-10 md:w-1/2 md:mt-0 lg:w-1/2">
+              {/* <div className="w-full px-4 mt-10 md:w-1/2 md:mt-0 lg:w-1/2">
                 <div className="relative">
                   <Image
                     src={HeroImage}
@@ -182,7 +182,7 @@ export default function Page() {
                     className="mx-auto duration-300 cursor-pointer max-w-full right-10 hover:scale-105"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
            
           </section>
