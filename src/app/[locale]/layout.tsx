@@ -10,6 +10,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Redho Arifin | Portfolio",
   description: "Portfolio Redho Arifin",
+  icons: {
+    icon: "/icon.png", // /public path
+  },
 };
 
 export default async function localLayout({
