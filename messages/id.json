@@ -1,0 +1,41 @@
+{
+  "Index": {
+    "title": "Teknologi."
+  },
+  "Menu": {
+    "home": "Beranda",
+    "blog": "Blog",
+    "about": "Tentang",
+    "contact": "Kontak"
+  },
+  "Hero": {
+    "title": "Bersama Redho Arifin. Apapun Masalanya, dibawa Enjoy aja!"
+  },
+  "About": {
+    "title": "Halo Dunia!",
+    "im": "Saya",
+    "name": "Redho Arifin",
+    "desc": "Freelance Full-stack Developer, saya memiliki minat belajar dalam mengembangkan aplikasi web baik dari sisi front-end maupun back-end. Dengan kemampuan dalam HTML, CSS, JavaScript, React.js, Next.js, dan desain web responsif, saya berupaya membangun antarmuka pengguna yang menarik dan fungsional. Selain itu, saya juga cukup dalam menggunakan kontrol versi (Git) dan membangun serta mengintegrasikan RESTful API, memungkinkan saya untuk menangani seluruh siklus pengembangan perangkat lunak dari pengembangan tampilan hingga manajemen basis data dan logika server."
+  },
+  "Project": {
+    "desc": "Project Belajar yang pasti akan terus diperbarui mengikuti perkembangan teknologi."
+  },
+  "Language": {
+    "title": "Pilih bahasa",
+    "lang": "Bahasa",
+    "en": "Inggris (USA)",
+    "id": "Indonesia"
+  },
+  "Bio": {
+    "desc": "Saya adalah lulusan D2 Teknik Informatika dari Akademi Komunitas Negeri Lamongan. Saat ini, saya sedang menempuh pendidikan PJJ D3 di Politeknik Elektronika Negeri Surabaya dengan fokus pada pengembangan sebagai  developer, baik untuk aplikasi mobile maupun website.",
+    "title-1": "Pendidikan",
+    "title-2": "Pengalaman Kerja",
+    "title-3": "Domisili",
+    "name": "Redho Arifin",
+    "domision": "Lamongan, Indonesia",
+    "study-1": "D2 Teknik Informatika di AKN Lamongan (2018 - 2020)",
+    "study-2": "D3 Teknik Informatika di PENS (2023 - Present)",
+    "experience-1": "Magang 1 tahun (2021 - 2022) menjadi Staff Admin BMH Gerai Lamongan, Indonesia",
+    "experience-2": "Magang 6 bulan (2023 - 2024) menjadi IT Support CV. Natusi, Mojokerto, Indonesia"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "Index": {
+    "title": "Tech."
+  },
+  "Menu": {
+    "home": "Home",
+    "blog": "Blog",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "With Redho Arifin. Whatever the problem, just enjoy it!"
+  },
+  "About": {
+    "title": "Hello world!",
+    "im": "I'm",
+    "name": "Redho Arifin",
+    "desc": "Freelance Full-stack Developer, I have a learning interest in developing web applications from both front-end and back-end sides. With proficiency in HTML, CSS, JavaScript, React.js, Next.js, and responsive web design, I strive to build attractive and functional user interfaces. In addition, I am also proficient in using version control (Git) and building and integrating RESTful APIs, allowing me to handle the entire software development lifecycle from display development to database management and server logic."
+  },
+  "Project":{
+    "desc": "Project Learning is sure to be updated as technology evolves."
+  },
+  "Bio":{
+    "desc": "I am a D2 graduate of Informatics Engineering from Lamongan State Community Academy. Currently, I am studying PJJ D3 at Politeknik Elektronika Negeri Surabaya with a focus on development as a developer, both for mobile applications and websites.",
+    "title-1": "Study",
+    "title-2": "Experience",
+    "title-3": "Domicile",
+    "name": "Redho Arifin",
+    "domision": "Lamongan, Indonesian",
+    "study-1" : "D2 Informatics Engineering at AKN Lamongan (2018 - 2020)",
+    "study-2": "D3 Informatics Engineering at PENS (2023 - Present)",
+    "experience-1" : "Intership 1 year (2021 - 2022) at Staff Admin BMH Gerai Lamongan, Indonesia",
+    "experience-2": "Internship 6 months (2023 - 2024) at IT Support CV. Natusi, Mojokerto, Indonesia"
+  },
+  "Language":{
+    "title": "Select a language",
+    "lang": "Language",
+    "en": "English",
+    "id": "Indonesian"
+  }
+}
