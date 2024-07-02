@@ -14,6 +14,8 @@ import { LampContainer } from "@/components/ui/lamp";
 import React from "react";
 import { motion } from "framer-motion";
 import { MovingButtonCV } from "@/components/CV";
+import Button from "@/components/Button";
+import { TelegramIcon } from "@/components/icons";
 export default function Page() {
   const t = useTranslations("Bio");
   return (
@@ -36,6 +38,10 @@ export default function Page() {
                   <h1 className="text-4xl font-semibold text-[#ee5449]">
                     {t("name")}
                   </h1>
+                  <Button variant="outline" className="mt-4 gap-4 py-4 rounded-xl" href="https://t.me/redhoarifin" target="_blank">
+                    <TelegramIcon/>
+                  <h3 className="text-xl">{t("contact")}</h3>
+                  </Button>
                   <div className="flex items-center mt-4 cursor-pointer">
                     <a
                       href="https://www.linkedin.com/in/redho-arifin-983372196/"
