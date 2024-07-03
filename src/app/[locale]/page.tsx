@@ -15,9 +15,9 @@ export default function Home() {
       <div className="bg-slate-950 ">
         <Tech />
       </div>
-      <div className="bg-slate-950 h-24 dark:bg-[#ee5449]">
-        <HeroParallaxDemo />
+      <div className="bg-slate-950 h-24 dark:bg-[#ee5449] mb-4">
       </div>
+        <HeroParallaxDemo />
     </>
   );
 }
