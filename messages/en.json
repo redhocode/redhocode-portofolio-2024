@@ -25,7 +25,7 @@
     "title-1": "Study",
     "title-2": "Experience",
     "title-3": "Domicile",
-    "contact": "Contact Me",
+    "contact": "Contact Me via",
     "name": "Redho Arifin",
     "domision": "Lamongan, Indonesian",
     "study-1" : "D2 Informatics Engineering at AKN Lamongan (2018 - 2020)",
@@ -38,5 +38,23 @@
     "lang": "Language",
     "en": "English",
     "id": "Indonesian"
+  },
+  "Experience":{
+    "year-1": "2021 - 2022",
+    "year-2": "2023 - 2024",
+    "company-1": "BMH Gerai Lamongan",
+    "company-2": "CV. Natusi",
+    "position-1": "Staff Admin",
+    "position-2": "IT Support",
+    "status-1": "Internship",
+    "status-2": "Internship"
+  },
+  "Study":{
+    "year-1": "2018 - 2020",
+    "year-2": "2023 - Present",
+    "campus-1": "Lamongan State Community Academy",
+    "campus-2": "Politeknik Elektronika Negeri Surabaya",
+    "major-1": "D2 Informatics Engineering",
+    "major-2": "D3 Informatics Engineering"
   }
 }
