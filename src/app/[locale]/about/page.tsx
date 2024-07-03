@@ -4,6 +4,7 @@ import HeroImage from "../../../../public/images/hero-4.png";
 import { useTranslations } from "next-intl";
 import { MapPinned, GraduationCap, School, BriefcaseBusiness } from "lucide-react";
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   Accordion,
   AccordionContent,
@@ -16,6 +17,7 @@ import { motion } from "framer-motion";
 import { MovingButtonCV } from "@/components/CV";
 import Button from "@/components/Button";
 import { TelegramIcon } from "@/components/icons";
+import { cn } from "@/lib/utils";
 export default function Page() {
   const t = useTranslations("Bio");
   return (
@@ -33,14 +35,28 @@ export default function Page() {
         >
           <section id="about" className="lg:mt-8 mt-80">
             <div className="md:container flex flex-col mx-auto md:flex-row md:items-center py-5 justify-center">
-              <div className="w-full px-4 md:w-1/2 lg:w-1/2">
+              <div className="w-full ">
+
                 <Card className="px-4 py-4">
+                  <div className="flex flex-row gap-4">
+                  <Avatar className="w-24 h-24">
+                    <AvatarImage src="https://github.com/shadcn.png" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+
+                    <div className="flex flex-col">
                   <h1 className="text-4xl font-semibold text-[#ee5449]">
                     {t("name")}
                   </h1>
-                  <Button variant="outline" className="mt-4 gap-4 py-4 rounded-xl" href="https://t.me/redhoarifin" target="_blank">
-                    <TelegramIcon/>
-                  <h3 className="text-xl">{t("contact")}</h3>
+
+                  <Button
+                    variant="outline"
+                    className="mt-4 gap-4 py-4 rounded-xl"
+                    href="https://t.me/redhoarifin"
+                    target="_blank"
+                  >
+                    <TelegramIcon />
+                    <h3 className="text-xl">{t("contact")}</h3>
                   </Button>
                   <div className="flex items-center mt-4 cursor-pointer">
                     <a
@@ -118,6 +134,8 @@ export default function Page() {
                       </svg>
                     </a>
                   </div>
+                    </div>
+                  </div>
                   <p className="text-gray-600 dark:text-gray-400 mt-4">
                     {t("desc")}
                   </p>
@@ -171,24 +189,10 @@ export default function Page() {
                   </Accordion>
                 </Card>
               </div>
-
-              {/* <div className="w-full px-4 mt-10 md:w-1/2 md:mt-0 lg:w-1/2">
-                <div className="relative">
-                  <Image
-                    src={HeroImage}
-                    alt="Hero"
-                    height={200}
-                    width={500}
-                    className="mx-auto duration-300 cursor-pointer max-w-full right-10 hover:scale-105"
-                  />
-                </div>
-              </div> */}
             </div>
-           
           </section>
         </motion.h1>
       </LampContainer>
-      
     </>
   );
 }
