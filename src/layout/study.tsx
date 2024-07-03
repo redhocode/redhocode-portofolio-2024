@@ -7,13 +7,13 @@ export default function Study() {
         title: t("major-1"),
         description: t("campus-1"),
         year: t("year-1"),
-        link: "https://stripe.com",
+        link: "#",
       },
       {
         title: t("major-2"),
         year: t("year-2"),
         description: t("campus-2"),
-        link: "https://netflix.com",
+        link: "#",
       },
     ];
     return (
