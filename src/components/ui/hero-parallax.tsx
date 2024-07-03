@@ -10,6 +10,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
+
 export const HeroParallax = ({
   products,
 }: {
@@ -54,49 +55,53 @@ export const HeroParallax = ({
     useTransform(scrollYProgress, [0, 0.2], [-700, 500]),
     springConfig
   );
+
   return (
-    <div
-      ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
-    >
-      <Header />
-      <motion.div
-        style={{
-          rotateX,
-          rotateZ,
-          translateY,
-          opacity,
-        }}
-        className=""
+    <div className="flex flex-col min-h-screen">
+      <div
+        ref={ref}
+        className="h-[270vh] md:h-[230vh] py-50 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
       >
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
-          {firstRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
-          ))}
+        <Header />
+        <motion.div
+          style={{
+            rotateX,
+            rotateZ,
+            translateY,
+            opacity,
+          }}
+          className=""
+        >
+          <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+            {firstRow.map((product) => (
+              <ProductCard
+                product={product}
+                translate={translateX}
+                key={product.title}
+              />
+            ))}
+          </motion.div>
+          <motion.div className="flex flex-row  mb-20 space-x-20 ">
+            {secondRow.map((product) => (
+              <ProductCard
+                product={product}
+                translate={translateXReverse}
+                key={product.title}
+              />
+            ))}
+          </motion.div>
+          <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+            {thirdRow.map((product) => (
+              <ProductCard
+                product={product}
+                translate={translateX}
+                key={product.title}
+              />
+            ))}
+          </motion.div>
         </motion.div>
-        <motion.div className="flex flex-row  mb-20 space-x-20 ">
-          {secondRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateXReverse}
-              key={product.title}
-            />
-          ))}
-        </motion.div>
-        <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
-          {thirdRow.map((product) => (
-            <ProductCard
-              product={product}
-              translate={translateX}
-              key={product.title}
-            />
-          ))}
-        </motion.div>
-      </motion.div>
+      </div>
+      <Footer />
     </div>
   );
 };
@@ -104,12 +109,12 @@ export const HeroParallax = ({
 export const Header = () => {
   const t = useTranslations("Project");
   return (
-    <div className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
+    <div className="max-w-7xl mx-auto px-4 w-full">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
         The Project <br /> development studio
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-      {t("desc")}
+        {t("desc")}
       </p>
     </div>
   );
@@ -154,5 +159,28 @@ export const ProductCard = ({
         {product.title}
       </h2>
     </motion.div>
+  );
+};
+
+const Footer = () => {
+  return (
+    <footer className=" mt-auto">
+      <div className="bg-[#ee5449] min-h-36"></div>
+      <div className="bg-slate-900 min-h-10 bottom-3">
+        <div className="container">
+          <div className="text-slate-400 py-4">
+            © 2024. Development by{" "}
+            <a
+              className="underline"
+              href="https://github.com/redhocode"
+              target="_blank"
+            >
+              Redho Arifin
+            </a>
+            .
+          </div>
+        </div>
+      </div>
+    </footer>
   );
 };
