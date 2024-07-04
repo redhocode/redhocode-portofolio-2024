@@ -36,7 +36,7 @@ export default function Page() {
           }}
           className="py-4"
         >
-          <section id="about" className="lg:mt-16 mt-80">
+          <section id="about" className="lg:-mt-20 mt-80">
             <div className="md:container flex flex-col mx-auto md:flex-row md:items-center justify-center">
               <div className="md:container">
                 <Card className="px-4 py-4">
