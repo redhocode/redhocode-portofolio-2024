@@ -23,16 +23,17 @@ import { Input } from "@/components/ui/input";
 import { Button } from "../ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "../ui/mode-theme";
-import { error } from "console";
 import { useTranslations, useLocale } from "next-intl";
-import {Code, FireExtinguisher,CodeSquare} from "lucide-react"
 import Link from "next/link";
 import SelectLanguage from "../SwichLang";
 import { MovingButtonCV } from "../CV";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 export default function Navbar() {
   const t = useTranslations("Menu");
-const locale: string = useLocale(); // Get the current locale
+const locale = useLocale();
+const router = useRouter();
+
   const [activeMenu, setActiveMenu] = useState("");
 
   const handleMenuClick = (menu: SetStateAction<string>) => {
@@ -40,9 +41,9 @@ const locale: string = useLocale(); // Get the current locale
   };
 
   const menuItems = [
-    { name: t("home"), href: "/" },
-    { name: t("about"), href: "/en/about" },
-    { name: t("blog"), href: "/en/blog" },
+    { name: t("home"), href: `/${locale}` },
+    { name: t("about"), href: `/${locale}/about` },
+    { name: t("blog"), href: `/${locale}/blog` },
   ];
 
   return (
@@ -52,6 +53,7 @@ const locale: string = useLocale(); // Get the current locale
           <Link
             href="/"
             className="flex items-center gap-1 text-lg font-normal md:text-base mr-8"
+            locale={locale}
           >
             <Image
             src="/icon.png"
@@ -68,6 +70,7 @@ const locale: string = useLocale(); // Get the current locale
             <Link
               key={item.name}
               href={item.href}
+              locale={locale}
               aria-current={activeMenu === item.name ? "page" : undefined}
               className={`transition-colors ${
                 activeMenu === item.name
