@@ -165,7 +165,7 @@ export const ProductCard = ({
 const Footer = () => {
   return (
     <footer className=" mt-auto">
-      <div className="bg-[#ee5449] min-h-36"></div>
+      <div className="bg-[#ee5449] md:min-h-24 min-h-16"></div>
       <div className="bg-slate-900 min-h-10 bottom-3">
         <div className="container">
           <div className="text-slate-400 py-4">

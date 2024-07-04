@@ -148,11 +148,11 @@ export default function Page() {
                       </div>
                     </div>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400 mt-4 text-pretty">
+                  <p className="text-gray-600 dark:text-gray-400 mt-4 md:text-pretty text-justify">
                     {t("desc")}
                   </p>
                   <hr className="my-2 border-2" />
-                  <Accordion type="single" collapsible className="w-full">
+                  {/* <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-2">
                       <AccordionTrigger>
                         <div className="md:text-2xl">
@@ -161,18 +161,18 @@ export default function Page() {
                         </div>
                       </AccordionTrigger>
                       <AccordionContent>
-                        {/* <div className="flex flex-row gap-3 mb-4 items-center">
+                        <div className="flex flex-row gap-3 mb-4 items-center">
                           <GraduationCap className="w-8 h-8" />
                           <span className="font-semibold">{t("study-1")}</span>
                         </div>
                         <div className="flex flex-row gap-3 items-center">
                           <School className="w-8 h-8" />
                           <span className="font-semibold">{t("study-2")}</span>
-                        </div> */}
+                        </div>
                         <Study />
                       </AccordionContent>
                     </AccordionItem>
-                  </Accordion>
+                  </Accordion> */}
                 </Card>
               </div>
             </div>

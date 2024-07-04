@@ -10,12 +10,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <div className="bg-slate-950 h-16 dark:bg-[#ee5449]"></div>
+      <div className="bg-slate-950 md:h-16 dark:bg-[#ee5449]"></div>
       <About />
       <div className="bg-slate-950 ">
         <Tech />
       </div>
-      <div className="bg-slate-950 h-24 dark:bg-[#ee5449] mb-4">
+      <div className="bg-slate-950 md:h-24 h-10 dark:bg-[#ee5449] mb-4">
       </div>
         <HeroParallaxDemo />
     </>
