@@ -67,7 +67,7 @@ export default function Page() {
                           target="_blank"
                         >
                           <MailIcon />
-                          <h3 className="text-md">{t("contact")} Email</h3>
+                          <h3 className="text-md">{t("contact")}</h3>
                         </Button>
                       </div>
                       <div className="flex items-center mt-4 cursor-pointer">
