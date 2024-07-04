@@ -51,7 +51,7 @@ export default function Page() {
                         {t("name")}
                       </h1>
                       <div className="flex md:flex-row md:gap-3 flex-col">
-                        <Button
+                        {/* <Button
                           variant="outline"
                           className="mt-4 gap-4 py-4 rounded-xl"
                           href="https://t.me/redhoarifin"
@@ -59,7 +59,7 @@ export default function Page() {
                         >
                           <TelegramIcon />
                           <h3 className="text-md">{t("contact")} Telegram</h3>
-                        </Button>
+                        </Button> */}
                         <Button
                           variant="outline"
                           className="mt-4 gap-4 py-4 rounded-xl"
