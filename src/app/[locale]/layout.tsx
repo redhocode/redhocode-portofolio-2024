@@ -24,7 +24,7 @@ export default async function localLayout({
 }>) {
       const messages = await getMessages();
   return (
-    <html lang={locale}>
+    <html lang={locale} className="dark">
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
