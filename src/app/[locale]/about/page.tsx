@@ -36,7 +36,7 @@ export default function Page() {
           }}
           className="py-4"
         >
-          <section id="about" className="lg:mt-8 mt-80">
+          <section id="about" className="lg:mt-16 mt-80">
             <div className="md:container flex flex-col mx-auto md:flex-row md:items-center justify-center">
               <div className="md:container">
                 <Card className="px-4 py-4">
@@ -148,7 +148,7 @@ export default function Page() {
                       </div>
                     </div>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400 mt-4 md:text-pretty text-justify">
+                  <p className="text-gray-600 dark:text-gray-400 mt-4 md:text-start text-justify">
                     {t("desc")}
                   </p>
                   <hr className="my-2 border-2" />
