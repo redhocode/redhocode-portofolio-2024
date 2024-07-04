@@ -25,9 +25,11 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "../ui/mode-theme";
 import { error } from "console";
 import { useTranslations, useLocale } from "next-intl";
+import {Code, FireExtinguisher,CodeSquare} from "lucide-react"
 import Link from "next/link";
 import SelectLanguage from "../SwichLang";
 import { MovingButtonCV } from "../CV";
+import Image from "next/image";
 export default function Navbar() {
   const t = useTranslations("Menu");
 const locale: string = useLocale(); // Get the current locale
@@ -48,12 +50,19 @@ const locale: string = useLocale(); // Get the current locale
       <div className="container mx-auto flex items-center gap-4 px-4 md:px-6">
         <nav className="hidden flex-col gap-8 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
           <Link
-            href="#"
-            className="flex items-center gap-2 text-lg font-normal md:text-base"
+            href="/"
+            className="flex items-center gap-1 text-lg font-normal md:text-base mr-8"
           >
-            <span className="font-bold antialiased text-[#ee5449] text-xl ">
-              {"<redhoarifin/>"}
-            </span>
+            <Image
+            src="/icon.png"
+            height={30}
+            width={30}
+            alt="logo"
+            className="lazy"
+            />
+            <p className="font-semibold antialiased text-[#ee5449] text-xl tracking-wide">
+          redhoarifin
+            </p>
           </Link>
           {menuItems.map((item) => (
             <Link
