@@ -9,7 +9,7 @@ export default function Tech() {
   const t = useTranslations("Index");
   return (
     <>
-      <div className="h-[50rem] flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center relative overflow-hidden pt-10 gap-4">
+      <div className="h-[50rem] flex flex-col antialiased items-center relative overflow-hidden pt-10 gap-4">
         <h1 className="text-5xl mb-10 font-semibold">{t("title")}</h1>
         <InfiniteMovingCards
           items={tech}

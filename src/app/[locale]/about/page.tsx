@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Image from "next/image";
 import HeroImage from "../../../../public/images/hero-4.png";
@@ -21,6 +22,8 @@ import { cn } from "@/lib/utils";
 import Experience from "@/layout/experience";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import Study from "@/layout/study";
+import CodeBox from "@/components/CodeBox";
+import { Separator } from "@/components/ui/separator";
 export default function Page() {
   const t = useTranslations("Bio");
   return (
@@ -37,7 +40,7 @@ export default function Page() {
           className="py-4"
         >
           <section id="about" className="lg:-mt-20 mt-80">
-            <div className="md:container flex flex-col mx-auto md:flex-row md:items-center justify-center">
+            <div className="md:container flex flex-col mx-auto md:flex-row md:items-center justify-center ">
               <div className="md:container">
                 <Card className="px-4 py-4">
                   <div className="flex flex-row gap-4">
@@ -151,7 +154,8 @@ export default function Page() {
                   <p className="text-gray-600 dark:text-gray-400 mt-4 md:text-start text-justify">
                     {t("desc")}
                   </p>
-                  <hr className="my-2 border-2" />
+                  <Separator/>
+               
                   {/* <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-2">
                       <AccordionTrigger>
@@ -175,6 +179,20 @@ export default function Page() {
                   </Accordion> */}
                 </Card>
               </div>
+              {/* <div className="w-full px-4 mt-10 md:w-1/2 md:mt-0 lg:w-1/2">
+                <div className="relative">
+                  <a
+                    href="https://www.spotify.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <img
+                      src="https://spotify-github-profile.kittinanx.com/api/view.svg?uid=a3thxrr5hvqruh3dkvsa8nh49&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=true"
+                      alt="Spotify Now Playing"
+                    />
+                  </a>
+                </div>
+              </div> */}
             </div>
           </section>
         </motion.h1>

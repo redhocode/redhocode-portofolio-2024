@@ -9,15 +9,15 @@ export default function Home() {
   const t = useTranslations("Index");
   return (
     <>
+      <div className="md:h-[20px] dark:bg-[#ee5449] -mt-4"></div>
       <Hero />
       <div className="bg-slate-950 md:h-16 dark:bg-[#ee5449]"></div>
       <About />
       <div className="bg-slate-950 ">
         <Tech />
       </div>
-      <div className="bg-slate-950 md:h-24 h-10 dark:bg-[#ee5449] mb-4">
-      </div>
-        <HeroParallaxDemo />
+      <div className="bg-slate-950 md:h-24 h-10 dark:bg-[#ee5449] mb-4"></div>
+      <Footer />
     </>
   );
 }

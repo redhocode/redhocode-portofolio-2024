@@ -11,9 +11,8 @@ export function Hero() {
   const words = t("title");
   return (
     <>
-      <div className="flex justify-center md:mx-20 md:min-h-screen lg:min-h-screen mx-8 flex-col gap-4 items-center mb-4">
+      <div className="flex justify-center md:mx-20 md:min-h-screen lg:min-h-screen mx-8 flex-col gap-4 items-center min-h-screen pb-6">
         <TextGenerateEffect words={words} />
-
         <BackgroundBeams />
       </div>
     </>
