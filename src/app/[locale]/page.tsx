@@ -21,7 +21,7 @@ export default function Home() {
       <div className="bg-dot-slate-400 dark:bg-[#ee5449]">
         <Experience />
       </div>
-    
+    <Project/>
     </>
   );
 }

@@ -20,7 +20,7 @@ export const HeroParallax = ({
     thumbnail: string;
   }[];
 }) => {
-  const firstRow = products.slice(0, 5);
+  const firstRow = products.slice(0,5);
   const secondRow = products.slice(5, 10);
   const thirdRow = products.slice(10, 15);
   const ref = React.useRef(null);
@@ -60,7 +60,7 @@ export const HeroParallax = ({
     <div className="flex flex-col min-h-screen">
       <div
         ref={ref}
-        className="h-[200vh] md:h-[230vh]  overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+        className="h-[170vh] md:h-[280vh] overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
       >
         <Header />
         <motion.div
@@ -70,9 +70,9 @@ export const HeroParallax = ({
             translateY,
             opacity,
           }}
-          className=""
+          className="gap-2"
         >
-          <motion.div className="flex flex-row-reverse space-x-reverse md:space-x-20 md:mb-20 mb-10 space-x-8">
+          <motion.div className="flex flex-row-reverse space-x-reverse md:space-x space-x-8 md:mb-20 mb-10">
             {firstRow.map((product) => (
               <ProductCard
                 product={product}
@@ -81,7 +81,7 @@ export const HeroParallax = ({
               />
             ))}
           </motion.div>
-          <motion.div className="flex flex-row  md:mb-20 mb-10 md:space-x-20 space-x-8">
+          <motion.div className="flex flex-row md:mb-20 mb-10 md:space-x-20 space-x-8">
             {secondRow.map((product) => (
               <ProductCard
                 product={product}
@@ -101,7 +101,6 @@ export const HeroParallax = ({
           </motion.div>
         </motion.div>
       </div>
-   
     </div>
   );
 };
@@ -109,8 +108,8 @@ export const HeroParallax = ({
 export const Header = () => {
   const t = useTranslations("Project");
   return (
-    <div className=" mx-auto w-full pt-36 justify-center items-center flex">
-      <h1 className="text-2xl md:text-[300px] font-bold dark:text-white">
+    <div className=" mx-auto w-full md:pt-36 pt-16 justify-center items-center flex">
+      <h1 className="text-5xl md:text-[300px] font-bold dark:text-white">
         The Project
       </h1>
     
@@ -138,7 +137,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product md:h-80 md:w-[30rem] relative flex-shrink-0 h-36 w-36"
+      className="group/product md:h-[30rem] md:w-[30rem] relative flex-shrink-0 h-36 w-36 rounded-md overflow-hidden"
     >
       <Link
         href={product.link}
@@ -146,8 +145,8 @@ export const ProductCard = ({
       >
         <Image
           src={product.thumbnail}
-          height="100"
-          width="100"
+          height="600"
+          width="600"
           className="object-cover object-left-top absolute md:h-full md:w-full inset-0 h-36 w-36"
           alt={product.title}
         />

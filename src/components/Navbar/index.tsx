@@ -42,7 +42,7 @@ const router = useRouter();
   };
 
 const menuItems = [
-  { name: t("home"), to: "hero" },
+
   { name: t("about"), to: "about" },
   { name: t("experience"), to: "experience" },
   { name: t("project"), to: "project" },
