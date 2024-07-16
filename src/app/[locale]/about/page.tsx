@@ -21,7 +21,7 @@ import { MailIcon, TelegramIcon } from "@/components/icons";
 import { cn } from "@/lib/utils";
 import Experience from "@/layout/experience";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
-import Study from "@/layout/study";
+
 import CodeBox from "@/components/CodeBox";
 import { Separator } from "@/components/ui/separator";
 export default function Page() {
