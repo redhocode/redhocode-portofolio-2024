@@ -8,6 +8,7 @@ import { getMessages } from "next-intl/server";
 import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import { PageWrapper } from "@/components/page-wrapper";
+import PlayMusic from "@/components/PlayMusic";
 
 
 
@@ -47,6 +48,7 @@ export default async function localLayout({
              </NextIntlClientProvider>
           <Footer />
         </ThemeProvider>
+        <PlayMusic/>
           <ScrollToTopButton/>
       </body>
     </html>
