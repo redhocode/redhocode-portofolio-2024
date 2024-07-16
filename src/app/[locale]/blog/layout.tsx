@@ -14,7 +14,7 @@ export default function BlogLayout({
       {children}
         
       </div>
-      <Footer />
+  
     </section>
   );
 }

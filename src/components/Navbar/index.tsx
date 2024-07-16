@@ -29,22 +29,27 @@ import SelectLanguage from "../SwichLang";
 import { MovingButtonCV } from "../CV";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { Link as ScrollLink } from "react-scroll";
 export default function Navbar() {
   const t = useTranslations("Menu");
 const locale = useLocale();
 const router = useRouter();
 
   const [activeMenu, setActiveMenu] = useState("");
-
+  const [open, setOpen] = useState(false);
   const handleMenuClick = (menu: SetStateAction<string>) => {
     setActiveMenu(menu);
   };
 
-  const menuItems = [
-    { name: t("home"), href: `/${locale}` },
-    { name: t("about"), href: `/${locale}/about` },
-    { name: t("blog"), href: `/${locale}/blog` },
-  ];
+const menuItems = [
+  { name: t("home"), to: "hero" },
+  { name: t("about"), to: "about" },
+  { name: t("experience"), to: "experience" },
+  { name: t("project"), to: "project" },
+  { name: t("blog"), href: `/${locale}/blog` },
+];
+
+
 
   return (
     <header className="sticky top-0 flex h-16 items-center bg-background z-50 border-b ">
@@ -56,32 +61,50 @@ const router = useRouter();
             locale={locale}
           >
             <Image
-            src="/icon.png"
-            height={30}
-            width={30}
-            alt="logo"
-            className="lazy"
+              src="/icon.png"
+              height={30}
+              width={30}
+              alt="logo"
+              className="lazy"
             />
             <p className="font-semibold antialiased text-[#ee5449] text-xl tracking-wide">
-          redhoarifin
+              redhoarifin
             </p>
           </Link>
-          {menuItems.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              locale={locale}
-              aria-current={activeMenu === item.name ? "page" : undefined}
-              className={`transition-colors ${
-                activeMenu === item.name
-                  ? "text-foreground"
-                  : "text-muted-foreground"
-              } hover:text-foreground`}
-              onClick={() => handleMenuClick(item.name)}
-            >
-              {item.name}
-            </Link>
-          ))}
+          {menuItems.map((item) =>
+            item.href ? (
+              <Link
+                key={item.name}
+                href={item.href}
+                locale={locale}
+                className={`transition-colors ${
+                  activeMenu === item.name
+                    ? "text-foreground"
+                    : "text-muted-foreground"
+                } hover:text-foreground`}
+                onClick={() => handleMenuClick(item.name)}
+              >
+                {item.name}
+              </Link>
+            ) : (
+              <ScrollLink
+                key={item.name}
+                to={item.to || ""}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                className={`transition-colors cursor-pointer ${
+                  activeMenu === item.name
+                    ? "text-foreground underline underline-offset-8 decoration-2 decoration-[#ee5449]"
+                    : "text-muted-foreground "
+                } hover:text-foreground`}
+                onClick={() => handleMenuClick(item.name)}
+              >
+                {item.name}
+              </ScrollLink>
+            )
+          )}
         </nav>
         <Sheet>
           <SheetTrigger asChild>
@@ -105,20 +128,40 @@ const router = useRouter();
                 </span>
               </Link>
               <SelectLanguage />
-              {menuItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`hover:text-foreground ${
-                    activeMenu === item.name
-                      ? "text-foreground"
-                      : "text-muted-foreground"
-                  }`}
-                  onClick={() => handleMenuClick(item.name)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {menuItems.map((item) =>
+                item.href ? (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    locale={locale}
+                    className={`transition-colors ${
+                      activeMenu === item.name
+                        ? "text-foreground"
+                        : "text-muted-foreground"
+                    } hover:text-foreground`}
+                    onClick={() => handleMenuClick(item.name)}
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <ScrollLink
+                    key={item.name}
+                    to={item.to || ""}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    className={`transition-colors cursor-pointer ${
+                      activeMenu === item.name
+                        ? "text-foreground underline underline-offset-8 decoration-2 decoration-[#ee5449]"
+                        : "text-muted-foreground "
+                    } hover:text-foreground`}
+                    onClick={() => handleMenuClick(item.name)}
+                  >
+                    {item.name}
+                  </ScrollLink>
+                )
+              )}
             </nav>
           </SheetContent>
         </Sheet>

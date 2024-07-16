@@ -6,6 +6,11 @@ import Navbar from "@/components/Navbar";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import Footer from "@/components/Footer";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
+import { PageWrapper } from "@/components/page-wrapper";
+
+
+
 const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Redho Arifin | Portfolio",
@@ -22,6 +27,7 @@ export default async function localLayout({
   children: React.ReactNode;
   params: { locale: string };
 }>) {
+  
       const messages = await getMessages();
   return (
     <html lang={locale} className="dark">
@@ -34,12 +40,14 @@ export default async function localLayout({
         >
              <NextIntlClientProvider messages={messages}>
 
-          <Navbar />
+          <PageWrapper>
 
           {children}
+          </PageWrapper>
              </NextIntlClientProvider>
+          <Footer />
         </ThemeProvider>
-          
+          <ScrollToTopButton/>
       </body>
     </html>
   );

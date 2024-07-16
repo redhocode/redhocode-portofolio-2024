@@ -9,18 +9,17 @@ export default function Tech() {
   const t = useTranslations("Index");
   return (
     <>
-      <div className="h-[50rem] flex flex-col antialiased items-center relative overflow-hidden pt-10 gap-4">
-        <h1 className="text-5xl mb-10 font-semibold">{t("title")}</h1>
+      <div className="md:h-[16rem] flex flex-col antialiased items-center relative overflow-hidden pt-10 gap-2 bg-slate-100 dark:bg-slate-950">
         <InfiniteMovingCards
           items={tech}
           direction="right"
           speed="slow"
         />
-        <InfiniteMovingCards
+        {/* <InfiniteMovingCards
           items={tech}
           direction="left"
-          speed="normal"
-        />
+          speed="slow"
+        /> */}
       </div>
     </>
   );
@@ -28,59 +27,59 @@ export default function Tech() {
 
 const tech = [
     {
-        name: "HTML",
+        name: "",
         icon: <HtmlIcon/>
     },
     {
-        name: "CSS",
+        name: "",
         icon: <CssIcon/>
     },
     {
-        name: "Javascript",
+        name: "",
         icon: <JavaScriptIcon/>
     },
     {
-        name: "Tailwind CSS",
+        name: "",
         icon: <TailwindIcon/>
     },
     {
-        name: "Typescript",
+        name: "",
         icon: <TypescriptIcon/>
     },
     {
-        name: "Redux",
+        name: "",
         icon: <ReduxIcon/>
     },
     {
-        name: "Postgres SQL",
+        name: "",
         icon: <PostgresSQLIcon/>
     },
     {
-        name: "Docker",
+        name: "",
         icon: <DockerIcon/>
     },
     {
-        name: "Linux",
+        name: "",
         icon: <LinuxIcon/>
     },
     {
-        name: "Prisma",
+        name: "",
         icon: <PrismaIcon/>
     },
   {
-    name: "React JS",
+    name: "",
     icon: <ReactIcon/>,
   },
 {
-    name: "Node JS",
+    name: "",
     icon: <NodeIcon/>
 },
 {
-    name: "Bun",
+    name: "",
     icon: <BunIcon/>
 },
 {
-    name: "Git",
+    name: "",
     icon: <GitIcon/>
 }
 ];

@@ -9,7 +9,6 @@ export default function AboutLayout({
   return (
     <section>
       {children}
-      <Footer />
     </section>
   );
 }

@@ -15,7 +15,7 @@ export default function Error({
   }, [error]);
 
   return (
-    <div className="flex flex-col items-center justify-center gap-2">
+    <div className="flex flex-col items-center justify-center gap-2 min-h-screen">
       <h2 className="text-2xl">Something went wrong!</h2>
       <Button
         variant="outline"

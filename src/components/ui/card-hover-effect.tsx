@@ -9,8 +9,9 @@ export const HoverEffect = ({
 }: {
   items: {
     title: string;
-    description: string;
-    year?: string;
+    description1: string;
+    description2?: string;
+    description3?: string;
     link: string;
   }[];
   className?: string;
@@ -20,7 +21,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3",
+        "grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3  py-10",
         className
       )}
     >
@@ -35,7 +36,7 @@ export const HoverEffect = ({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-300/[0.8] block  rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -50,9 +51,10 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
-            <CardTitle>{item.title}</CardTitle>
-            <CardDescription>{item.year}</CardDescription>
-            <CardDescription>{item.description}</CardDescription>
+            <CardTitle className="text-4xl">{item.title}</CardTitle>
+            <CardDescription className="mt-3 text-2xl">{item.description1}</CardDescription>
+            <CardDescription className="-mt-0 text-xl">{item.description2}</CardDescription>
+            <CardDescription className="mt-4 text-xl">{item.description3}</CardDescription>
           </Card>
         </Link>
       ))}
@@ -70,12 +72,12 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full md:h-[320px] md:w-[600px] p-4 overflow-hidden bg-slate-950 border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
     >
       <div className="relative z-50">
-        <div className="p-3">{children}</div>
+        <div className="p-4">{children}</div>
       </div>
     </div>
   );
@@ -103,7 +105,7 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        " text-zinc-400 tracking-wide leading-relaxed text-sm",
+        "mt-8 text-zinc-400 tracking-wide leading-relaxed text-sm",
         className
       )}
     >

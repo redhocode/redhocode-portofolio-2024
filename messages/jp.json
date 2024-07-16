@@ -1,50 +1,51 @@
 {
   "Index": {
-    "title": "Tech."
+    "title": "Teknologi"
   },
   "Menu": {
-    "home": "Home",
-    "blog": "Blog",
-    "project": "Project",
-    "experience": "Experience",
-    "about": "About",
+    "home": "Griya",
+    "blog": "Tulisan",
+    "project": "Gawean",
+    "experience": "Pengalaman",
+    "about": "Babagan",
     "contact": "Contact"
   },
   "Hero": {
-    "title": "With Redho Arifin. Whatever the problem, just enjoy it!"
+    "title": "Bareng Mas Redho. Kabeh Masalah, Di gawe santai ae!"
   },
   "About": {
     "title": "Hello world!",
-    "title-1": "About me",
+    "title-1": "Babaging Kula",
     "im": "I'm",
     "name": "Redho Arifin",
-    "desc": "Full-stack Developer, I have a learning interest in developing web applications from both front-end and back-end sides. With proficiency in HTML, CSS, JavaScript, React.js, Next.js, and responsive web design, I strive to build attractive and functional user interfaces. In addition, I am also proficient in using version control (Git) and building and integrating RESTful APIs, allowing me to handle the entire software development lifecycle from display development to database management and server logic."
+    "desc": "Full-stack Developer, Aku duwe minat kanggo sinau ngembangake aplikasi web saka sisih ngarep lan mburi. Kanthi keahlian ing HTML, CSS, JavaScript, React.js, Next.js, lan desain web responsif, aku ngupayakake mbangun antarmuka pangguna sing menarik lan fungsional. Kajaba iku, aku uga cukup trampil nggunakake kontrol versi (Git) lan mbangun lan nggabungake API RESTful, sing ngidini aku nangani kabeh siklus pangembangan piranti lunak saka pangembangan tampilan menyang manajemen database lan logika server."
   },
-  "Project":{
+  "Project": {
     "desc": "Project Learning is sure to be updated as technology evolves."
   },
-  "Bio":{
+  "Bio": {
     "desc": "I am a D2 graduate of Informatics Engineering from Lamongan State Community Academy. Currently, I am studying PJJ D3 at Politeknik Elektronika Negeri Surabaya with a focus on development as a developer, both for mobile applications and websites.",
     "title-1": "Study",
     "title-2": "Experience",
     "title-3": "Domicile",
-    "contact": "Contact Me",
+    "contact": "Kabari ae",
     "name": "Redho Arifin",
     "domision": "Lamongan, Indonesian",
-    "study-1" : "D2 Informatics Engineering at AKN Lamongan (2018 - 2020)",
+    "study-1": "D2 Informatics Engineering at AKN Lamongan (2018 - 2020)",
     "study-2": "D3 Informatics Engineering at PENS (2023 - Present)",
-    "experience-1" : "Intership 1 year (2021 - 2022) at Staff Admin BMH Gerai Lamongan, Indonesia",
+    "experience-1": "Intership 1 year (2021 - 2022) at Staff Admin BMH Gerai Lamongan, Indonesia",
     "experience-2": "Internship 6 months (2023 - 2024) at IT Support CV. Natusi, Mojokerto, Indonesia"
   },
-  "Language":{
+  "Language": {
     "title": "Select a language",
     "lang": "Language",
     "en": "English",
     "id": "Indonesian",
     "jp": "Javanese"
+    
   },
-  "Experience":{
-    "title": "Experience",
+  "Experience": {
+    "title": "Pengalaman",
     "year-1": "2021 - 2022",
     "year-2": "2023 - 2024",
     "year-3": "2020",
@@ -58,7 +59,7 @@
     "status-1": "Internship",
     "status-2": "Internship"
   },
-  "Study":{
+  "Study": {
     "year-1": "2018 - 2020",
     "year-2": "2023 - Present",
     "campus-1": "Lamongan State Community Academy",

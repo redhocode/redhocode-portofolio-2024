@@ -1,23 +1,27 @@
-import Footer from "@/components/Footer";
+"use client";
 import { Hero } from "@/components/Hero";
+import Navbar from "@/components/Navbar";
 import About from "@/layout/about";
-import { HeroParallaxDemo } from "@/layout/project";
+import Experience from "@/layout/experience";
+import HomePage from "@/layout/home";
+import Project from "@/layout/project";
 import Tech from "@/layout/tech";
-import { useTranslations } from "next-intl";
 
 export default function Home() {
-  const t = useTranslations("Index");
+ 
   return (
     <>
-      <div className="md:h-[20px] dark:bg-[#ee5449] -mt-4"></div>
-      <Hero />
-      <div className="bg-slate-950 md:h-16 dark:bg-[#ee5449]"></div>
+    <Navbar/>
+      <Hero/>
+      <div className="bg-slate-950 md:h-16 h-10 dark:bg-[#ee5449]"></div>
       <About />
       <div className="bg-slate-950 ">
         <Tech />
       </div>
-      <div className="bg-slate-950 md:h-24 h-10 dark:bg-[#ee5449] mb-4"></div>
-      <Footer />
+      <div className="bg-dot-slate-400 dark:bg-[#ee5449]">
+        <Experience />
+      </div>
+    
     </>
   );
 }

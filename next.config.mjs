@@ -8,6 +8,7 @@ const nextConfig = {
       "github.com",
       "aceternity.com",
       "spotify-github-profile.kittinanx.com",
+      "github-readme-stats.vercel.app",
     ],
   },
 };

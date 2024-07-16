@@ -71,9 +71,7 @@ export const StickyScroll = ({
     >
       <div className="div relative flex items-start px-4">
         <div className="">
-          <h1 className="text-2xl sticky top-0 font-semibold text-[#ee5449]">
-            Experience
-          </h1>
+
           {content.map((item, index) => (
             <div key={item.title + index} className="my-20">
               <motion.h2

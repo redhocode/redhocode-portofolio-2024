@@ -7,6 +7,7 @@ export const TextGenerateEffect = ({
   words,
   className,
 }: {
+  words2?: string;
   words: string;
   className?: string;
 }) => {
@@ -40,6 +41,7 @@ export const TextGenerateEffect = ({
         })}
       </motion.div>
     );
+    
   };
 
   return (

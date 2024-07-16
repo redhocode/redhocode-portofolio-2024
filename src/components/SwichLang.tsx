@@ -32,6 +32,8 @@ export default function SelectLanguage() {
         return "Indonesian";
       case "en":
         return "English";
+      case "jp":
+        return "Javanese";
       default:
         return t("title"); // Default placeholder if no language is selected
     }
@@ -47,6 +49,7 @@ export default function SelectLanguage() {
           <SelectLabel>{t("lang")}</SelectLabel>
           <SelectItem value="id">{t("id")}</SelectItem>
           <SelectItem value="en">{t("en")}</SelectItem>
+          <SelectItem value="jp">{t("jp")}</SelectItem>
         </SelectGroup>
       </SelectContent>
     </Select>

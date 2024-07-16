@@ -1,51 +1,46 @@
 "use client";
 import * as React from "react";
-import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
+import { HoverEffect } from "@/components/ui/card-hover-effect";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+
 export default function Experience() {
     const t = useTranslations("Experience")
-    const content = [
-      {
-        title: t("position-2"),
-        description_1: t("status-2"),
-        description_2: t("year-2"),
-        description_3: t("company-2"),
-        content: (
-          <div className="h-full w-full  flex items-center justify-center text-white">
-            <Image
-              src="/images/icon-4.png"
-              width={300}
-              height={300}
-              className="h-full w-full object-cover"
-              alt="linear board demo"
-            />
-          </div>
-        ),
-      },
-      {
-        title: t("position-1"),
-        description_1: t("status-1"),
-        description_2: t("year-1"),
-        description_3: t("company-1"),
-        content: (
-          <div className="h-full w-full  flex items-center justify-center text-white">
-            <Image
-              src="/images/icon-3.png"
-              width={300}
-              height={300}
-              className="h-full w-full object-cover"
-              alt="linear board demo"
-            />
-          </div>
-        ),
-      },
-    ];
+const projects = [
+  {
+    title: t("position-2"),
+    description1: t("year-2"),
+    description2: t("status-2"),
+    description3: t("company-2"),
+    link: "",
+  },
+  {
+    title: t("position-1"),
+    description1: t("year-1"),
+    description2: t("status-1"),
+    description3: t("company-1"),
+    link: "",
+  },
+  {
+    title: t("position-3"),
+    description1: t("year-3"),
+    description2: t("status-3"),
+    description3: t("company-3"),
+    link: "",
+  },
+];
     return (
       <>
-        <div className="p-8">
-          <StickyScroll content={content} />
+      <section id="experience" className="min-h-screen">
+        <div className=" flex flex-row space-x-4 p-4 md:pt-20 md:pb-16">
+          <h1 className="text-4xl md:text-[120px] font-bold  ">
+           {t("title")}
+          </h1>
         </div>
+        <div className="justify-center flex items-center mx-auto px-4">
+          <HoverEffect items={projects} />
+        </div>
+      </section>
       </>
     );
 }

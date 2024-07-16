@@ -5,6 +5,8 @@
   "Menu": {
     "home": "Beranda",
     "blog": "Blog",
+    "project": "Project",
+    "experience": "Pengalaman",
     "about": "Tentang",
     "contact": "Kontak"
   },
@@ -13,9 +15,10 @@
   },
   "About": {
     "title": "Halo Dunia!",
+    "title-1": "Tentang",
     "im": "Saya",
     "name": "Redho Arifin",
-    "desc": "Freelance Full-stack Developer, saya memiliki minat belajar dalam mengembangkan aplikasi web baik dari sisi front-end maupun back-end. Dengan kemampuan dalam HTML, CSS, JavaScript, React.js, Next.js, dan desain web responsif, saya berupaya membangun antarmuka pengguna yang menarik dan fungsional. Selain itu, saya juga cukup dalam menggunakan kontrol versi (Git) dan membangun serta mengintegrasikan RESTful API, memungkinkan saya untuk menangani seluruh siklus pengembangan perangkat lunak dari pengembangan tampilan hingga manajemen basis data dan logika server."
+    "desc": "Full-stack Developer, Saya memiliki minat belajar dalam mengembangkan aplikasi web baik dari sisi front-end maupun back-end. Dengan kemampuan dalam HTML, CSS, JavaScript, React.js, Next.js, dan desain web responsif, saya berupaya membangun antarmuka pengguna yang menarik dan fungsional. Selain itu, saya juga cukup dalam menggunakan kontrol versi (Git) dan membangun serta mengintegrasikan RESTful API, memungkinkan saya untuk menangani seluruh siklus pengembangan perangkat lunak dari pengembangan tampilan hingga manajemen basis data dan logika server."
   },
   "Project": {
     "desc": "Project Belajar yang pasti akan terus diperbarui mengikuti perkembangan teknologi."
@@ -24,7 +27,8 @@
     "title": "Pilih bahasa",
     "lang": "Bahasa",
     "en": "Inggris (USA)",
-    "id": "Indonesia"
+    "id": "Indonesia",
+    "jp": "Jawa"
   },
   "Bio": {
     "desc": "Saya adalah lulusan D2 Teknik Informatika dari Akademi Komunitas Negeri Lamongan. Saat ini, saya sedang menempuh pendidikan PJJ D3 di Politeknik Elektronika Negeri Surabaya dengan fokus pada pengembangan sebagai  developer, baik untuk aplikasi mobile maupun website.",
@@ -40,12 +44,17 @@
     "experience-2": "Magang 6 bulan (2023 - 2024) menjadi IT Support CV. Natusi, Mojokerto, Indonesia"
   },
   "Experience": {
+    "title": "Pengalaman Kerja",
     "year-1": "2021 - 2022",
     "year-2": "2023 - 2024",
+    "year-3": "2020",
+    "company-3": "YES Lamongan",
     "company-1": "BMH Gerai Lamongan",
     "company-2": "CV. Natusi",
     "position-1": "Staff Admin",
     "position-2": "IT Support",
+    "position-3": "Data Entry",
+    "status-3": "Freelance",
     "status-1": "Magang",
     "status-2": "Magang"
   },

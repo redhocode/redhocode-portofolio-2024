@@ -60,7 +60,7 @@ export const HeroParallax = ({
     <div className="flex flex-col min-h-screen">
       <div
         ref={ref}
-        className="h-[270vh] md:h-[230vh] py-50 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+        className="h-[200vh] md:h-[230vh]  overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
       >
         <Header />
         <motion.div
@@ -72,7 +72,7 @@ export const HeroParallax = ({
           }}
           className=""
         >
-          <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
+          <motion.div className="flex flex-row-reverse space-x-reverse md:space-x-20 md:mb-20 mb-10 space-x-8">
             {firstRow.map((product) => (
               <ProductCard
                 product={product}
@@ -81,7 +81,7 @@ export const HeroParallax = ({
               />
             ))}
           </motion.div>
-          <motion.div className="flex flex-row  mb-20 space-x-20 ">
+          <motion.div className="flex flex-row  md:mb-20 mb-10 md:space-x-20 space-x-8">
             {secondRow.map((product) => (
               <ProductCard
                 product={product}
@@ -90,7 +90,7 @@ export const HeroParallax = ({
               />
             ))}
           </motion.div>
-          <motion.div className="flex flex-row-reverse space-x-reverse space-x-20">
+          <motion.div className="flex flex-row-reverse space-x-reverse md:space-x-20 space-x-8">
             {thirdRow.map((product) => (
               <ProductCard
                 product={product}
@@ -101,7 +101,7 @@ export const HeroParallax = ({
           </motion.div>
         </motion.div>
       </div>
-      <Footer />
+   
     </div>
   );
 };
@@ -109,13 +109,11 @@ export const HeroParallax = ({
 export const Header = () => {
   const t = useTranslations("Project");
   return (
-    <div className="max-w-7xl mx-auto px-4 w-full">
-      <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        The Project <br /> development studio
+    <div className=" mx-auto w-full pt-36 justify-center items-center flex">
+      <h1 className="text-2xl md:text-[300px] font-bold dark:text-white">
+        The Project
       </h1>
-      <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        {t("desc")}
-      </p>
+    
     </div>
   );
 };
@@ -140,7 +138,7 @@ export const ProductCard = ({
         y: -20,
       }}
       key={product.title}
-      className="group/product h-96 w-[30rem] relative flex-shrink-0"
+      className="group/product md:h-80 md:w-[30rem] relative flex-shrink-0 h-36 w-36"
     >
       <Link
         href={product.link}
@@ -148,9 +146,9 @@ export const ProductCard = ({
       >
         <Image
           src={product.thumbnail}
-          height="600"
-          width="600"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
+          height="100"
+          width="100"
+          className="object-cover object-left-top absolute md:h-full md:w-full inset-0 h-36 w-36"
           alt={product.title}
         />
       </Link>
@@ -162,25 +160,5 @@ export const ProductCard = ({
   );
 };
 
-const Footer = () => {
-  return (
-    <footer className=" mt-auto">
-      <div className="bg-[#ee5449] md:min-h-32"></div>
-      <div className="bg-slate-900 min-h-10 bottom-3">
-        <div className="container">
-          <div className="text-slate-400 py-4">
-            © 2024. Development by{" "}
-            <a
-              className="underline"
-              href="https://github.com/redhocode"
-              target="_blank"
-            >
-              Redho Arifin
-            </a>
-            .
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-};
+
+
