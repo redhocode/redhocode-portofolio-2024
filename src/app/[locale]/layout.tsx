@@ -44,11 +44,11 @@ export default async function localLayout({
           <PageWrapper>
 
           {children}
+        <PlayMusic/>
           </PageWrapper>
              </NextIntlClientProvider>
           <Footer />
         </ThemeProvider>
-        <PlayMusic/>
           <ScrollToTopButton/>
       </body>
     </html>

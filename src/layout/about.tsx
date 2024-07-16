@@ -145,6 +145,7 @@ const imageUrl = "https://github.com/redhocode.png";
                       <h3 className="text-md">{ts("contact")}</h3>
                     </Button>
                     <p className="text-justify mt-4 md:text-xl">{t("desc")}</p>
+                    
                   </CardDescription>
                 </div>
               </CardContent>
