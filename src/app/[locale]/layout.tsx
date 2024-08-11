@@ -9,6 +9,8 @@ import Footer from "@/components/Footer";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import { PageWrapper } from "@/components/page-wrapper";
 import PlayMusic from "@/components/PlayMusic";
+import SideNav from "@/components/sidebar";
+import Header from "@/components/Navbar/header";
 
 
 
@@ -39,17 +41,27 @@ export default async function localLayout({
           enableSystem
           disableTransitionOnChange
         >
-             <NextIntlClientProvider messages={messages}>
+          <NextIntlClientProvider messages={messages}>
+         
+            <Header/>
+              <div className="flex">
+                <SideNav/>
+                <div className="w-full overflow-x-auto">
+                  <div className="sm:h-[calc(99vh-60px)] overflow-auto ">
+                    <div className="w-full flex justify-center mx-auto overflow-auto h-[calc(100vh - 120px)] overflow-y-auto relative">
+                      <PageWrapper>
 
-          <PageWrapper>
-
-          {children}
-        <PlayMusic/>
-          </PageWrapper>
-             </NextIntlClientProvider>
-          <Footer />
+                      <div className="w-full">{children}</div>
+                      </PageWrapper>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <PlayMusic />
+           
+          </NextIntlClientProvider>
         </ThemeProvider>
-          <ScrollToTopButton/>
+        <ScrollToTopButton />
       </body>
     </html>
   );

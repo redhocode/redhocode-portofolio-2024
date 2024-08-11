@@ -11,6 +11,7 @@ const nextConfig = {
       "github-readme-stats.vercel.app",
     ],
   },
+  transpilePackages: ["three"],
 };
 
 export default withNextIntl(nextConfig);

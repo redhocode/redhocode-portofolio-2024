@@ -24,8 +24,10 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 
 import CodeBox from "@/components/CodeBox";
 import { Separator } from "@/components/ui/separator";
+import Tech from "@/layout/tech";
 export default function Page() {
   const t = useTranslations("Bio");
+   const ts = useTranslations("About");
   return (
     <>
       <LampContainer>
@@ -39,7 +41,7 @@ export default function Page() {
           }}
           className="py-4"
         >
-          <section id="about" className="lg:-mt-20 mt-80">
+          <section id="about" className="mt-80 lg:-mt-48 md:-mt-28">
             <div className="md:container flex flex-col mx-auto md:flex-row md:items-center justify-center ">
               <div className="md:container">
                 <Card className="px-4 py-4">
@@ -53,25 +55,18 @@ export default function Page() {
                       <h1 className="md:text-7xl text-4xl font-semibold text-[#ee5449]">
                         {t("name")}
                       </h1>
-                      <div className="flex md:flex-row md:gap-3 flex-col">
-                        {/* <Button
-                          variant="outline"
-                          className="mt-4 gap-4 py-4 rounded-xl"
-                          href="https://t.me/redhoarifin"
-                          target="_blank"
-                        >
-                          <TelegramIcon />
-                          <h3 className="text-md">{t("contact")} Telegram</h3>
-                        </Button> */}
+                      <div className="flex md:flex-row md:gap-3 flex-col mt-4">
+              
                         <Button
                           variant="outline"
-                          className="mt-4 gap-4 py-4 rounded-xl"
+                          className=" gap-4 rounded-full"
                           href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=redho.arn@gmail.com&tf=1"
                           target="_blank"
                         >
                           <MailIcon />
                           <h3 className="text-md">{t("contact")}</h3>
                         </Button>
+                     
                       </div>
                       <div className="flex items-center mt-4 cursor-pointer">
                         <a
@@ -151,11 +146,9 @@ export default function Page() {
                       </div>
                     </div>
                   </div>
-                  <p className="text-gray-600 dark:text-gray-400 mt-4 md:text-start text-justify">
-                    {t("desc")}
-                  </p>
-                  <Separator/>
-               
+                  <p className="text-justify mt-4 md:text-xl text-secondary-foreground">{ts("desc")}</p>
+              
+
                   {/* <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-2">
                       <AccordionTrigger>
@@ -197,9 +190,7 @@ export default function Page() {
           </section>
         </motion.h1>
       </LampContainer>
-      <div className="md:container md:-mt-80 lg:-mt-32 -mt-72">
-        <Experience />
-      </div>
+   
     </>
   );
 }

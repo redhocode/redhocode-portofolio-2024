@@ -25,15 +25,15 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ModeToggle } from "../ui/mode-theme";
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
-import SelectLanguage from "../SwichLang";
+import SelectLanguage from "../SelectLanguage";
 import { MovingButtonCV } from "../CV";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Link as ScrollLink } from "react-scroll";
 export default function Navbar() {
   const t = useTranslations("Menu");
-const locale = useLocale();
-const router = useRouter();
+  const locale = useLocale();
+  const router = useRouter();
 
   const [activeMenu, setActiveMenu] = useState("");
   const [open, setOpen] = useState(false);
@@ -41,15 +41,12 @@ const router = useRouter();
     setActiveMenu(menu);
   };
 
-const menuItems = [
-
-  { name: t("about"), to: "about" },
-  { name: t("experience"), to: "experience" },
-  { name: t("project"), to: "project" },
-  { name: t("blog"), href: `/${locale}/blog` },
-];
-
-
+  const menuItems = [
+    { name: t("about"), to: "about" },
+    { name: t("experience"), to: "experience" },
+    { name: t("project"), to: "project" },
+    { name: t("blog"), href: `/${locale}/blog` },
+  ];
 
   return (
     <header className="sticky top-0 flex h-16 items-center bg-background z-50 border-b ">

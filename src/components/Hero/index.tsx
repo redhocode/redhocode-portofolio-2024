@@ -13,7 +13,7 @@ export function Hero() {
   return (
     <>
     <section id="hero">
-      <div className="flex justify-center md:mx-20 md:min-h-screen lg:min-h-screen mx-8 flex-col gap-4 items-center min-h-screen pb-6">
+      <div className="flex justify-center md:min-h-screen lg:min-h-screen mx-8 flex-col items-center min-h-screen">
         <TextGenerateEffect  words={words} />
         <BackgroundBeams />
       </div>

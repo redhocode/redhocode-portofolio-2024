@@ -7,13 +7,11 @@ import HomePage from "@/layout/home";
 import Project from "@/layout/project";
 import Tech from "@/layout/tech";
 
-export default function Home() {
+export default function Profile() {
  
   return (
     <>
-    
-    <Hero/>
-
+    <h1>Profile</h1>
     </>
   );
 }

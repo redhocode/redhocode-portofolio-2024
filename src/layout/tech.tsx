@@ -9,7 +9,7 @@ export default function Tech() {
   const t = useTranslations("Index");
   return (
     <>
-      <div className="md:h-[16rem] flex flex-col antialiased items-center relative overflow-hidden pt-10 gap-2 bg-slate-100 dark:bg-slate-950">
+      <div className=" flex flex-col antialiased items-center relative overflow-hidden gap-2 bg-slate-100 dark:bg-slate-950">
         <InfiniteMovingCards
           items={tech}
           direction="right"
